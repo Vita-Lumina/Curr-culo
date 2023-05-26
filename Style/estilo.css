@@ -1,24 +1,31 @@
+/* Estilos gerais */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
+
+/* Estilos do cabeçalho */
 header {
   background-color: #333;
   color: white;
   padding: 20px;
   text-align: center;
 }
+
 h1 {
   font-size: 50px;
   margin: 0;
 }
+
+/* Estilos da navegação */
 nav {
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
   padding: 20px;
 }
+
 nav a {
   color: #333;
   font-size: 20px;
@@ -26,67 +33,114 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 nav a:hover {
-  color: #666;
+  color: #007bff;
 }
+
+a:hover {
+  color: #007bff;
+}
+
+/*Botão de claro escuro*/
+
+
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+
+.toggle-icon.moon {
+  background-image: url('../IMG/Moon.ico');
+}
+
+.toggle-icon.sun {
+  background-image: url('../IMG/Sun.ico');
+}
+
+
+
+
+/* Estilos da seção */
 section {
   display: flex;
   flex-wrap: wrap;
   padding: 50px;
 }
 
+/* Estilos dos artigos */
 article {
   background-color: #f2f2f2;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin: 20px auto; /* adiciona margem superior e inferior de 20px e centraliza horizontalmente */
-  max-width: 800px; /* define a largura máxima do elemento para 800px */
+  margin: 20px auto;
+  max-width: 800px;
   padding: 30px;
   width: calc(33.33% - 40px);
   display: none;
-  
-
 }
 
 article.active {
   display: block;
 }
+
 article h2 {
   font-size: 30px;
   margin: 0 0 20px;
 }
+
 article p {
   font-size: 20px;
   line-height: 1.5;
 }
+
 article ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 article ul li::before {
   content: "•";
   display: inline-block;
   margin-right: 10px;
 }
+
+/* Estilos do rodapé */
 footer {
   background-color: #333;
   color: white;
   padding: 20px;
   text-align: center;
 }
+
+/* Estilos específicos para o elemento com id "experiencia" */
 #experiencia {
   background-color: #f2f2f2;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin: 20px auto ; /* adiciona margem superior e inferior de 20px e centraliza horizontalmente */
-  max-width: 800px auto; /* define a largura máxima do elemento para 800px */
+  margin: 20px auto;
+  max-width: 800px;
   padding: 30px;
-  width: calc(33.33% - 40px) auto;
+  width: calc(33.33% - 40px);
   display: centre;
 }
 
+/* Estilos para as imagens de certificados */
+.cert-IMG {
+  max-width: 100%;
+  height: auto;
+}
 
+/* Estilos do slider */
 .slick-slider {
   position: relative;
   display: block;
@@ -95,7 +149,6 @@ footer {
   -webkit-box-sizing: border-box;
   touch-action: pan-y;
 }
-
 
 .slick-list {
   position: relative;
@@ -148,16 +201,13 @@ footer {
 }
 
 [dir='rtl'] .slick-slide {
-  float: right solid rgb(241, 3, 3);
+  float: right;
+  border-right: 1px solid rgb(241, 3, 3);
 }
-
-
 
 .slick-slide.slick-loading img {
   display: none;
 }
-
-
 
 .slick-initialized .slick-slide {
   display: block;
@@ -173,9 +223,7 @@ footer {
   border: 1px solid black;
 }
 
-
-
-
+/* Estilos adicionais */
 .slider {
   width: 80%;
   margin: 0 auto;
@@ -195,10 +243,33 @@ footer {
   font-size: 18px;
 }
 
-
 .slick-prev:before,
 .slick-next:before {
   color: black !important;
 }
 
+/* Estilos dos dots */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Ajuste a margem superior conforme necessário */
+}
 
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #eee;
+  border: red;
+  cursor: pointer;
+  padding: 5px;
+  outline: none;
+  margin-top: -15px;
+}
