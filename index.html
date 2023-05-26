@@ -3,9 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leonardo Moura Pinheiro</title>
-    <link rel="stylesheet" href="Style/estilo.css">
+    <link id="styleSheet" rel="stylesheet" href="Style/estilo.css">
     <script defer src="Script/Script.js"></script>
-
 
     <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
@@ -24,32 +23,36 @@
       <h1>Leonardo Moura Pinheiro</h1>
     </header>
     <nav>
+      <img id="toggleMode"class="fas fa-sun" sizes="16x16" src="IMG/Sun.ico" alt="SUN Icon">
       <!-- Código relacionado ao item SOBRE -->
       <a href="#" data-tab="sobre">Sobre</a>
-      <!-- Código relacionado ao item EXPERIÊNCIA -->
-      <a href="#" data-tab="experiencia">Experiência</a>
       <!-- Código relacionado ao item EDUCAÇÃO -->
       <a href="#" data-tab="educacao">Educação</a>
+      <!-- Código relacionado ao item EXPERIÊNCIA -->
+      <a href="#" data-tab="experiencia">Experiência</a>
       <!-- Código relacionado ao item HABILIDADES -->
       <a href="#" data-tab="habilidades">Habilidades</a>
+      <!-- Código relacionado ao item Certificados -->
+      <a href="#" data-tab="Certificados">Certificados</a>
       <!-- Código relacionado ao item CONTATO -->
       <a href="#" data-tab="contato">Contato</a>
     </nav>
     <section>
-      <!-- Código relacionado ao item SOBRE -->
-      <article id="sobre" class="active">
-        <img src="IMG/Analista Leonardo Moura Pinheiro.png" width="300" height="300" alt="Analista Leonardo Moura Pinheiro">
-        <h2>Sobre mim</h2>
-        <p>Tenho um grande interesse pela tecnologia e estou sempre buscando novos desafios nessa área. Ao longo da minha trajetória profissional, adquiri experiência em suporte técnico, atendimento ao cliente, manutenção de computadores e programação, sempre buscando me aprimorar e me atualizar para oferecer o melhor serviço possível. Sou uma pessoa curiosa por natureza e adoro desmontar e consertar coisas para entender como elas funcionam. Acredito que o conhecimento é a chave para o sucesso e estou sempre disposto a aprender mais para me desenvolver tanto pessoal quanto profissionalmente. Além disso, sou bastante adaptável a novos ambientes e situações, o que me permite lidar com diversos desafios de forma eficiente.</p>
-        <h2>Objetivos Profissionais</h2>
-        <h4>Cargo desejado:</h4>        
-        <li>TI Help desk</li>
-        <li>TI Montagem e Manutenção de Computadores</li>
-        <li>Análise de Sistema</li>
-        <li>Desenvolvedor frontend</li>
-        <li>Desenvolvedor backend</li>
-        <h4>Jornada: Período Integral</h4>
-        <h4>Tipo de contrato: Efetivo – CLT </h4>
+      
+        <!-- Código relacionado ao item SOBRE -->
+        <article id="sobre" class="active">
+          <img src="IMG/Analista Leonardo Moura Pinheiro.png" width="300" height="300" alt="Analista Leonardo Moura Pinheiro">
+          <h2>Sobre mim</h2>
+          <p>Tenho um grande interesse pela tecnologia e estou sempre buscando novos desafios nessa área. Ao longo da minha trajetória profissional, adquiri experiência em suporte técnico, atendimento ao cliente, manutenção de computadores e programação, sempre buscando me aprimorar e me atualizar para oferecer o melhor serviço possível. Sou uma pessoa curiosa por natureza e adoro desmontar e consertar coisas para entender como elas funcionam. Acredito que o conhecimento é a chave para o sucesso e estou sempre disposto a aprender mais para me desenvolver tanto pessoal quanto profissionalmente. Além disso, sou bastante adaptável a novos ambientes e situações, o que me permite lidar com diversos desafios de forma eficiente.</p>
+          <h2>Objetivos Profissionais</h2>
+          <h4>Cargo desejado:</h4>
+          <li>TI Help desk</li>
+          <li>TI Montagem e Manutenção de Computadores</li>
+          <li>Análise de Sistema</li>
+          <li>Desenvolvedor frontend</li>
+          <li>Desenvolvedor backend</li>
+          <h4>Jornada: Período Integral</h4>
+          <h4>Tipo de contrato: Efetivo – CLT </h4>
         </article>
         <!-- Código relacionado ao item EXPERIÊNCIA -->
         <article id="experiencia">
@@ -102,9 +105,6 @@
             </div>
           </div>
         </article>
-        
-        
-        
         <!-- Código relacionado ao item EDUCAÇÃO -->
         <article id="educacao">
           <h2>Educação</h2>
@@ -135,19 +135,97 @@
             <li>Espanhol: Básico.</li>
           </ul>
         </article>
-              <!-- Código relacionado ao item CONTATO -->
-      <article id="contato">
-        <h2>Entre em contato</h2>
+        <!-- Código relacionado ao item Certificados -->
+        <article id="Certificados">
+          <h2>Certificados</h2>
+          <div class="cert-slider">
+            <div class="cert-item slick-slide" data-order="1">
+              <div class="cert-item-content">
+                <img src="IMG/Certificados/MICROSOFT WORD 2016 - BÁSICO.jpg" alt="Certificado MICROSOFT WORD 2016 - BÁSICO" class="cert-IMG">
+              </div>
+            </div>
+            <div class="cert-item slick-slide" data-order="2">
+              <div class="cert-item-content">
+                <img src="IMG/Certificados/MICROSOFT WORD 2013 - BÁSICO.jpg" alt="Certificado MICROSOFT WORD 2013 - BÁSICO" class="cert-IMG">
+              </div>
+            </div>
+            <!-- Adicione a classe "cert-IMG" às tags "img" restantes -->
+            <div class="cert-item slick-slide" data-order="3">
+              <div class="cert-item-content">
+                <img src="IMG/Certificados/Microsoft Word 2010 - Básico.jpg" alt="Certificado Microsoft Word 2010 - Básico" class="cert-IMG">
+              </div>
+            </div>
+            <div class="cert-item slick-slide" data-order="4">
+              <div class="cert-item-content">
+                <img src="IMG/Certificados/Microsoft PowerPoint 2013 - Avançado.jpg" alt="Certificado Microsoft PowerPoint 2013 - Avançado" class="cert-IMG">
+              </div>
+            </div>
+            <div class="cert-item slick-slide" data-order="5">
+              <div class="cert-item-content">
+                <img src="IMG/Certificados/Introdução ao JavaScript.jpg" alt="Certificado Introdução ao JavaScript" class="cert-IMG">
+              </div>
+            </div>
+            <div class="cert-item slick-slide" data-order="6">
+              <div class="cert-item-content">
+                <img src="IMG/Certificados/Introdução à Programação Orientada a Objetos (POO).jpg" alt="Certificado Introdução à Programação Orientada a Objetos (POO)" class="cert-IMG">
+              </div>
+            </div>
+            <div class="cert-item slick-slide" data-order="7">
+              <div class="cert-item-content">
+                <img src="IMG/Certificados/Fundamentos de lógica de programação.jpg" alt="Certificado Fundamentos de lógica de programação" class="cert-IMG">
+              </div>
+            </div>
+            <div class="cert-item slick-slide" data-order="8">
+              <div class="cert-item-content">
+                <img src="IMG/Certificados/MICROSOFT EXCEL 2010 - AVANÇADO.jpg" alt="Certificado MICROSOFT EXCEL 2010 - AVANÇADO" class="cert-IMG">
+              </div>
+            </div>
+            <div class="cert-item slick-slide" data-order="9">
+              <div class="cert-item-content">
+                <img src="IMG/Certificados/Execel 2016 básico.jpg" alt="Certificado Execel 2016 básico" class="cert-IMG">
+              </div>
+            </div>
+            <div class="cert-item slick-slide" data-order="10">
+              <div class="cert-item-content">
+                <img src="IMG/Certificados/Microsoft Excel 2016 - Avançado.jpg" alt="Certificado Microsoft Excel 2016 - Avançado" class="cert-IMG">
+              </div>
+            </div>
+            <div class="cert-item slick-slide" data-order="11">
+              <div class="cert-item-content">
+                <img src="IMG/Certificados/INTRODUÇÃO À PROGRAMAÇÃO DE COMPUTADORES.jpg" alt="Certificado INTRODUÇÃO À PROGRAMAÇÃO DE COMPUTADORES" class="cert-IMG">
+              </div>
+            </div>
+            <div class="cert-item slick-slide" data-order="12">
+              <div class="cert-item-content">
+                <img src="IMG/Certificados/INTRODUÇÃO AO PYTHON.jpg" alt="Certificado INTRODUÇÃO AO PYTHON" class="cert-IMG">
+              </div>
+            </div>
+            <div class="cert-item slick-slide" data-order="13">
+              <div class="cert-item-content">
+                <img src="IMG/Certificados/Intensivão de Python.jpg" alt="Certificado Intensivão de Python" class="cert-IMG">
+              </div>
+            </div>
+            <div class="cert-item slick-slide" data-order="14">
+              <div class="cert-item-content">
+                <img src="IMG/Certificados/Fundamentos em Python.jpg" alt="Certificado Fundamentos em Python" class="cert-IMG">
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Código relacionado ao item CONTATO -->
+        <article id="contato">
+          <h2>Entre em contato</h2>
+            <ul>
+              <li>Email: leonardomourapinheiro99@gmail.com</li>
+              <li>Telefone: +55 11 956399923</li>
+              <li>Endereço: R.David Livingstone Parque Boturussu São Paulo SP, 03801-050</li>
+            </ul>
+          <h3>Links</h3>
           <ul>
-            <li>Email: leonardomourapinheiro99@gmail.com</li>
-            <li>Telefone: +55 11 956399923</li>
-            <li>Endereço: R.David Livingstone Parque Boturussu São Paulo SP, 03801-050</li>
+            <li><a href="https://www.linkedin.com/in/leonardo-moura-pinheiro-045962253/?originalSubdomain=br" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
           </ul>
-        <h3>Links</h3>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/leonardo-moura-pinheiro-045962253/?originalSubdomain=br" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-        </ul>
-      </article>
+        </article>
     </section>
     <footer>
       <p>&copy; 2023 Currículo . Todos os direitos reservados.</p>
